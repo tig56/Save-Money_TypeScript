@@ -15,7 +15,7 @@ const MainMenu: React.FC = () => {
 
       <div className="card" id="childBtn" onClick={() => navigate("/child")}>
         <img
-          src="/child.png"
+          src="/Save-Money_TypeScript/child.png"
           alt="貯金管理アプリのアイコン（こども）"
           className="card-img"
         />
@@ -31,7 +31,7 @@ const MainMenu: React.FC = () => {
         onClick={() => navigate("/grandpa")}
       >
         <img
-          src="/grandpa.png"
+          src="/Save-Money_TypeScript/grandpa.png"
           alt="資産管理アプリのアイコン（おじいちゃん）"
           className="card-img"
         />

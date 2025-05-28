@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
+const basePath = import.meta.env.BASE_URL;
 
 const MainMenu: React.FC = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const MainMenu: React.FC = () => {
 
       <div className="card" id="childBtn" onClick={() => navigate("/child")}>
         <img
-          src="/Save-Money_TypeScript/child.png"
+          src={`${basePath}child.png`}
           alt="貯金管理アプリのアイコン（こども）"
           className="card-img"
         />
@@ -31,7 +32,7 @@ const MainMenu: React.FC = () => {
         onClick={() => navigate("/grandpa")}
       >
         <img
-          src="/Save-Money_TypeScript/grandpa.png"
+          src={`${basePath}grandpa.png`}
           alt="資産管理アプリのアイコン（おじいちゃん）"
           className="card-img"
         />

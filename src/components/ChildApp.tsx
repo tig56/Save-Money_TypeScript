@@ -78,7 +78,7 @@ function SavingsTable({ data, onUpdate, onDelete }: SavingsTableProps) {
 
   useEffect(() => {
     onUpdate({ ...data, year, bank, months });
-  }, [year, bank, months]);
+  }, [year, bank, months, data, onUpdate]);
 
   const handleMonthChange = (
     index: number,

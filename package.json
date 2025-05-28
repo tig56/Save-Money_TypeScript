@@ -1,6 +1,7 @@
 {
   "name": "save-money-typescript",
   "private": true,
+  "homepage": "https://tig56.github.io/Save-Money_TypeScript",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -35,7 +35,7 @@ React + TypeScriptで作成した、シンプルで使いやすい2種類のお�
 ## 使用技術
 - React 18
 - TypeScript
-- TypeScriptCSS（レスポンシブデザイン対応）
+- CSS（レスポンシブデザイン対応）
 
 ##　リンク先
 https://tig56.github.io/Save-Money_TypeScript/

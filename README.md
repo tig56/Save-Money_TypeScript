@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# アプリ名
+お金の管理アプリ（貯金管理アプリ & 資産管理アプリ)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 概要
+React + TypeScriptで作成した、シンプルで使いやすい2種類のお金の管理アプリです。
 
-Currently, two official plugins are available:
+ーー
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 貯金管理アプリ　(ChildApp)
 
-## Expanding the ESLint configuration
+## 特徴
+・銀行ごとに「目標金額」「実際の貯金額」「差額」を月単位で管理
+・表形式で、月ごとの貯金状況を簡単に確認 
+・銀行の追加・削除が可能（表ごとで管理)
+・入力値はすべてローカルストレージに保存され、ページをリロードしても保持されます
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## スクリーンショット
+![image](https://github.com/user-attachments/assets/52a448d0-ffad-4e3b-a1cc-8d35f8f4efe3)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+ーー
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 資産管理アプリ　(GrandApp)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 特徴
+・銀行口座単位で現在の貯蓄額を管理
+・銀行の追加・削除が可能（行ごとで管理）
+・全体の合計金額を自動で表示
+・入力内容はすべてローカルストレージに保存されます
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## スクリーンショット
+![image](https://github.com/user-attachments/assets/a5ac4bca-05a9-4657-b878-9dc476d7bca5
+
+ーー
+
+## 使用技術
+・React 18
+・TypeScript
+・CSS（レスポンシブデザイン対応）
+
+##　リンク先
+https://tig56.github.io/Save-Money_TypeScript/

@@ -1,9 +1,8 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
 const basePath = import.meta.env.BASE_URL;
 
-const MainMenu: React.FC = () => {
+const MainMenu = () => {
   const navigate = useNavigate();
 
   return (
